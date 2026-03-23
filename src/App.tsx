@@ -1,7 +1,7 @@
 const App = () => {
   return (
     <>
-      <p>This is the app</p>
+      <h1>This is the app</h1>
     </>
   );
 };
