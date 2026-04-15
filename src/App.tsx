@@ -1,7 +1,9 @@
+import SiteHeader from "./components/SiteHeader/SiteHeader";
+
 const App = () => {
   return (
     <>
-      <h1>Cove UI</h1>
+      <SiteHeader />
     </>
   );
 };
