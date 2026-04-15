@@ -13,6 +13,8 @@ const SiteHeader = () => {
           className={styles.headerButton}
           href="https://github.com/louiseka/cove-ui"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Cove UI GitHub repository"
         >
           View GitHub Repo <FaSquareGithub size={20} />
         </a>
