@@ -1,7 +1,7 @@
 const App = () => {
   return (
     <>
-      <h1>This is the app</h1>
+      <h1>Cove UI</h1>
     </>
   );
 };
