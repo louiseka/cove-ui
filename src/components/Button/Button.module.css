@@ -5,4 +5,17 @@ button {
 .button {
   font-family: var(--body-font);
   font-size: var(--font-md);
+  padding: var(--space-2) var(--space-4);
+  border: none;
+  background-color: var(--primary-500);
+  border-radius: var(--radius-sm);
+}
+
+.primary {
+  background-color: var(--primary-500);
+  color: var(--primary-50);
+}
+
+.secondary {
+  background-color: var(--primary-100);
 }

@@ -1,29 +1,42 @@
 import Button from "./Button";
 
-## Button
+# Button
 
-A reusable button component with different variants and states.
-
+<div className="docsHero">
+  A reusable button component with different variants and states.
+</div>
 ---
 
 ## Live Examples
 
-<Button type="button"> Primary Button</Button>
-<Button type="button"> Secondary Button </Button>
-<Button disabled type="button">
+<div className="docsExamples">
+
+<Button type="button" variant="primary">
+  Primary Button
+</Button>
+<Button type="button" variant="secondary">
+  Secondary Button
+</Button>
+<Button disabled type="button" variant="secondary">
   Disabled Button
 </Button>
 <Button type="submit"> Submit Form</Button>
-<Button type="button"> Loading</Button>
+<Button type="button" loading="true"></Button>
 
----
+</div>
 
 ## Usage
 
-```
-<Button> </Button>
+<div className="docsUsage">
 
 ```
+<Button type="button" variant="primary">
+  Primary Button
+</Button>
+
+```
+
+</div>
 
 ### When to use
 
@@ -33,7 +46,7 @@ A reusable button component with different variants and states.
 
 ## Props
 
-<div className="docs">
+<div className="docsTable docsProps">
 
 | Prop     | Type                     | Default   | Description         |
 | -------- | ------------------------ | --------- | ------------------- |
@@ -45,3 +58,7 @@ A reusable button component with different variants and states.
 </div>
 
 ## Accessibility
+
+<div className="docsAccessibility">
+
+</div>
