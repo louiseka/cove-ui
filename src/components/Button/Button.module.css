@@ -1,0 +1,8 @@
+button {
+  cursor: pointer;
+}
+
+.button {
+  font-family: var(--body-font);
+  font-size: var(--font-md);
+}
