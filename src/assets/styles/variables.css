@@ -28,6 +28,9 @@
   /* Text */
   --text-black: #1f2a30;
 
+  /* Font Family */
+  --body-font: "Nunito", sans-serif;
+
   /* Font Sizes */
 
   --font-xs: 0.75rem; /* 12px */

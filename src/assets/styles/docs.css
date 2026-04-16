@@ -1,0 +1,17 @@
+.docs table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.docs th,
+.docs td {
+  border: 1px solid var(--neutral-200);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.docs th {
+  background-color: var(--neutral-100);
+  font-weight: 600;
+}
