@@ -19,12 +19,18 @@ body {
 }
 
 h1,
-h2,
-h3,
 h4,
 p {
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  margin: var(--space-2) 0 0;
+}
+
+h3 {
+  margin: var(--space-2) 0;
 }
 
 a {
