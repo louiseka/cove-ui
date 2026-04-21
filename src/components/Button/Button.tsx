@@ -9,15 +9,13 @@ const Button = ({
   loading = false,
 }: ButtonProps) => {
   return (
-    <>
-      <button
-        className={`${styles.button} ${styles[variant]}`}
-        disabled={disabled || loading}
-        type={type}
-      >
-        {loading ? "Loading..." : children}
-      </button>
-    </>
+    <button
+      className={`${styles.button} ${styles[variant]}`}
+      disabled={disabled || loading}
+      type={type}
+    >
+      {loading ? "Loading..." : children}
+    </button>
   );
 };
 
