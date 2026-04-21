@@ -1,4 +1,5 @@
 import Button from "./Button";
+import CodeBlock from "../CodeBlock/CodeBlock";
 
 # Button
 
@@ -20,27 +21,94 @@ import Button from "./Button";
 <Button disabled type="button" variant="secondary">
   Disabled Button
 </Button>
-<Button type="submit"> Submit Form</Button>
-<Button type="button" loading="true"></Button>
+<Button type="submit"> Submit Button</Button>
+<Button type="button" loading />
 
 </div>
 
-## Usage
+---
+
+## Code Example
 
 <div className="docsUsage">
 
-```
-<Button type="button" variant="primary">
+<CodeBlock language="tsx">
+  {`<Button type="button" variant="primary">
   Primary Button
-</Button>
-
-```
+</Button>`}
+</CodeBlock>
 
 </div>
 
-### When to use
+---
 
-### When not to use
+## When to use
+
+### Primary Button
+
+Use a primary button for the main action on a page or section. For example:
+
+- There is one clear action you want users to take.
+- Progressing to the next step.
+- Confirming the primary choice.
+
+### Secondary Button
+
+Use a secondary button for supporting or alternative actions. For example:
+
+- There is more than one action, but only one is primary.
+- Cancel, go back, or secondary workflows.
+- Less important actions alongside a primary button.
+
+### Disabled Button
+
+Use a disabled button when an action is temporarily unavailable. For example:
+
+- Required fields are incomplete.
+- User must complete a step first.
+- Action is not yet permitted.
+
+### Loading Button
+
+Use a loading button when an action is in progress after user interaction. For example:
+
+- Submitting a form.
+- Processing a request.
+- Saving data.
+
+### Submit Button
+
+Use a submit button specifically for form submission. For example:
+
+- Sending form data to a server.
+- Completing a multi-step form.
+- Finalising user input.
+
+---
+
+## Accessibility
+
+Buttons should be used for actions, not navigation. If the element takes a user to another page, use a link instead.
+
+<div className="docsAccessibility">
+
+### Semantic usage
+
+- Use a `<button>` for actions such as submitting forms, opening dialogs, or triggering changes in the interface.
+- Use a link (`<a>`) for navigation between pages or external destinations.
+
+### Button text
+
+Button text should clearly describe the action it performs. For example:
+
+- “Save and continue”
+- “Sign in”
+- “Add another item”
+- “Submit form”
+
+Avoid vague labels such as “Click here” or “Submit” without context.
+
+</div>
 
 ---
 
@@ -54,11 +122,5 @@ import Button from "./Button";
 | type     | "button" \| "submit"     | "button"  | HTML button type    |
 | variant  | "primary" \| "secondary" | "primary" | Visual style        |
 | disabled | boolean                  | false     | Disables the button |
-
-</div>
-
-## Accessibility
-
-<div className="docsAccessibility">
 
 </div>
