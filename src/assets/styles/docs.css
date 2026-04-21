@@ -12,6 +12,11 @@
   gap: var(--space-4);
 }
 
+.docsTable {
+  width: 100%;
+  overflow-x: auto;
+}
+
 .docsTable table {
   width: 100%;
   border-collapse: collapse;
