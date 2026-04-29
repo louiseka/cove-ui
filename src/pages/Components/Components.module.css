@@ -1,3 +1,9 @@
 .components {
-  margin: 2em;
+  margin: 1em 2em;
+}
+
+@media (min-width: 700px) {
+  .components {
+    margin: 2em;
+  }
 }
