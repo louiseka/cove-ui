@@ -1,5 +1,6 @@
 import styles from "./SiteNav.module.css";
 import { useState } from "react";
+import { Link } from "react-router";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
 const SiteNav = () => {
@@ -16,11 +17,11 @@ const SiteNav = () => {
       <nav className={`${styles.nav} ${open ? styles.open : ""}`}>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
-            <a className={styles.navLinkActive} href="#">
-              Button
-            </a>
+            <Link to="/components/button">Button</Link>
           </li>
-          <li className={styles.navItem}>Modal</li>
+          <li className={styles.navItem}>
+            <Link to="/components/input">Input</Link>
+          </li>
           <li className={styles.navItem}>Modal</li>
         </ul>
       </nav>
