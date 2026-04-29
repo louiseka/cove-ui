@@ -11,6 +11,7 @@ export default defineConfig({
       remarkPlugins: [remarkGfm],
     }),
   ],
+  base: "/cove-ui/",
   test: {
     environment: "jsdom",
     globals: true,
