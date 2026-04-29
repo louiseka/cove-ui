@@ -18,6 +18,11 @@ body {
   color: var(--text-black);
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 h1,
 h4,
 p {

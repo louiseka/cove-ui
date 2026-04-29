@@ -1,0 +1,26 @@
+.nav {
+  min-width: 180px;
+  padding: 1rem;
+  background-color: var(--neutral-100);
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+}
+
+.navItem {
+  margin: 1rem;
+}
+
+.navLink,
+.navLinkActive {
+  text-decoration: none;
+}
+
+.navLinkActive {
+  border-left: 4px solid var(--primary-600);
+  font-weight: var(--font-bold);
+  margin: -14px;
+  padding: 0 0 0 0.6rem;
+}
