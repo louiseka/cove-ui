@@ -26,3 +26,4 @@ The project is designed to demonstrate frontend engineering skills including com
 - CSS Modules
 - Vite
 - Vitest
+- MDX 
