@@ -1,10 +1,15 @@
 import styles from "./SiteNav.module.css";
 import { useState } from "react";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
 const SiteNav = () => {
   const [open, setOpen] = useState(false);
+
+  const navItems = [
+    { name: "Button", path: "button" },
+    { name: "Input", path: "modal" },
+  ];
 
   return (
     <div className={styles.navContainer}>
@@ -16,13 +21,18 @@ const SiteNav = () => {
       </button>
       <nav className={`${styles.nav} ${open ? styles.open : ""}`}>
         <ul className={styles.navList}>
-          <li className={styles.navItem}>
-            <Link to="/components/button">Button</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link to="/components/input">Input</Link>
-          </li>
-          <li className={styles.navItem}>Modal</li>
+          {navItems.map((item) => (
+            <li key={item.path} className={styles.navItem}>
+              <NavLink
+                to={`/components/${item.path}`}
+                className={({ isActive }) =>
+                  isActive ? styles.navLinkActive : styles.navLink
+                }
+              >
+                {item.name}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>
