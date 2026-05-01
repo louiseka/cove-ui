@@ -1,11 +1,11 @@
 import ButtonDoc from "../../components/Button/ButtonDoc.mdx";
-import Input from "../../components/Input/Input";
+import InputDoc from "../../components/Input/InputDoc.mdx";
 import styles from "./Components.module.css";
 import { useParams } from "react-router";
 
 const componentMap = {
   button: <ButtonDoc />,
-  input: <Input />,
+  input: <InputDoc />,
 };
 
 const Components = () => {

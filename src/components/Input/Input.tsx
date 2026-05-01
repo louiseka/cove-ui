@@ -1,7 +1,8 @@
 const Input = () => {
   return (
     <>
-      <h1>This is input page</h1>
+      <label htmlFor="name">This is the label</label>
+      <input type="text" id="name" name="name" />
     </>
   );
 };

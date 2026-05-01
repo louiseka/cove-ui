@@ -8,7 +8,7 @@ const SiteNav = () => {
 
   const navItems = [
     { name: "Button", path: "button" },
-    { name: "Input", path: "modal" },
+    { name: "Input", path: "input" },
   ];
 
   return (
