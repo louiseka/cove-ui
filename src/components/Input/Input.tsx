@@ -9,10 +9,10 @@ const Input = ({
   size = 30,
 }: InputProps) => {
   return (
-    <>
+    <div>
       <label htmlFor={id}>{children}</label>
       <input required={required} type={type} id={id} name={name} size={size} />
-    </>
+    </div>
   );
 };
 

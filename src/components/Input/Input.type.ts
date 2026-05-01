@@ -6,3 +6,5 @@ export interface InputProps {
   required?: boolean;
   size?: number;
 }
+
+// Add in pattern

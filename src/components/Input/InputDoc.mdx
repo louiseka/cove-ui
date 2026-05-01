@@ -1,7 +1,56 @@
 import Input from "./Input";
+import CodeBlock from "../CodeBlock/CodeBlock";
 
-# Input Component
+# Input
 
-<Input id="name" name="first-name" type="text">
-  Your first name
-</Input>
+<div className="docsHero">
+  A reusable form input component with accessible labeling and support for
+  multiple input types.
+</div>
+---
+
+## Live Examples
+
+<div className="docsExamples">
+
+    <Input id="name" name="first-name" type="text">
+      Your first name
+    </Input>
+
+
+    <Input id="age" name="age" type="number" size={2}>
+      Quantity
+    </Input>
+
+</div>
+
+---
+
+## Code Example
+
+<div className="docsUsage">
+
+<CodeBlock language="tsx">
+  {`<Input id="name" name="first-name" type="text">
+      Your first name
+    </Input>`}
+</CodeBlock>
+
+</div>
+
+---
+
+## Props
+
+<div className="docsTable docsProps">
+
+| Prop     | Type                                   | Default | Description                                 |
+| -------- | -------------------------------------- | ------- | ------------------------------------------- |
+| children | React.ReactNode                        | —       | Label text for input                        |
+| id       | string                                 | —       | Used for input id and label htmlFor linking |
+| name     | string                                 | —       | Name used in form submission                |
+| type     | "text" \| "number" \| "email" \| "tel" | "text"  | Input field type                            |
+| required | boolean                                | false   | Marks input as required                     |
+| size     | number                                 | 30      | Width of input in characters                |
+
+</div>
