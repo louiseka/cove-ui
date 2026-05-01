@@ -1,8 +1,17 @@
-const Input = () => {
+import type { InputProps } from "./Input.type";
+
+const Input = ({
+  children,
+  id,
+  name,
+  type,
+  required = false,
+  size = 30,
+}: InputProps) => {
   return (
     <>
-      <label htmlFor="name">This is the label</label>
-      <input type="text" id="name" name="name" />
+      <label htmlFor={id}>{children}</label>
+      <input required={required} type={type} id={id} name={name} size={size} />
     </>
   );
 };
