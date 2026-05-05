@@ -46,6 +46,12 @@ button {
   font-family: "Nunito", sans-serif;
 }
 
+input {
+  font-family: var(--body-font);
+  font-size: var(--font-md);
+  color: var(--text-black);
+}
+
 @media (min-width: 700px) {
   .wrapper {
     flex-direction: row;

@@ -1,4 +1,5 @@
 import type { InputProps } from "./Input.type";
+import styles from "./Input.module.css";
 
 const Input = ({
   children,
@@ -10,8 +11,17 @@ const Input = ({
 }: InputProps) => {
   return (
     <div>
-      <label htmlFor={id}>{children}</label>
-      <input required={required} type={type} id={id} name={name} size={size} />
+      <label className={styles.label} htmlFor={id}>
+        {children}
+      </label>
+      <input
+        className={styles.input}
+        required={required}
+        type={type}
+        id={id}
+        name={name}
+        size={size}
+      />
     </div>
   );
 };
