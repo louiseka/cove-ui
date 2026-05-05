@@ -5,6 +5,7 @@ export interface InputProps {
   type: "text" | "number" | "email" | "tel";
   required?: boolean;
   size?: number;
+  pattern?: string;
 }
 
 // Add in pattern
