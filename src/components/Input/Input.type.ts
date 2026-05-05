@@ -4,8 +4,5 @@ export interface InputProps {
   name: string;
   type: "text" | "number" | "email" | "tel";
   required?: boolean;
-  size?: number;
   pattern?: string;
 }
-
-// Add in pattern
