@@ -18,8 +18,22 @@ import CodeBlock from "../CodeBlock/CodeBlock";
     </Input>
 
 
-    <Input id="age" name="age" type="number" size={2}>
+    <Input id="age" name="age" type="number">
       Quantity
+    </Input>
+
+<Input
+  id="email-address"
+  name="email-address"
+  type="email"
+  pattern=".+@example\.com"
+  required={true}
+>
+  Your email address
+</Input>
+
+    <Input id="mobile-number" name="mobile number" type="tel" pattern="^(\+44\s?7\d{3}|07\d{3})\s?\d{3}\s?\d{3}$">
+      Your UK mobile number
     </Input>
 
 </div>
@@ -40,6 +54,12 @@ import CodeBlock from "../CodeBlock/CodeBlock";
 
 ---
 
+## When to use
+
+Use these inputs within a form element with button type submit.
+
+---
+
 ## Props
 
 <div className="docsTable docsProps">
@@ -51,7 +71,6 @@ import CodeBlock from "../CodeBlock/CodeBlock";
 | name     | string                                 | —       | Name used in form submission                |
 | type     | "text" \| "number" \| "email" \| "tel" | "text"  | Input field type                            |
 | required | boolean                                | false   | Marks input as required                     |
-| size     | number                                 | 30      | Width of input in characters                |
 | pattern  | string                                 | —       | A regex that the input's value must match   |
 
 </div>
