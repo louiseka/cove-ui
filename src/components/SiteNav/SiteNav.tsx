@@ -9,6 +9,7 @@ const SiteNav = () => {
   const navItems = [
     { name: "Button", path: "button" },
     { name: "Input", path: "input" },
+    { name: "Password Input", path: "password" },
   ];
 
   return (
