@@ -1,5 +1,6 @@
 .components {
   margin: 1em 2em;
+  max-width: 1400px;
 }
 
 @media (min-width: 700px) {
