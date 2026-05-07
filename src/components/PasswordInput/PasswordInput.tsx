@@ -1,5 +1,7 @@
 import type { PasswordInputProps } from "./PasswordInput.type";
 
+import styles from "./PasswordInput.module.css";
+
 const PasswordInput = ({
   children,
   id,
@@ -8,8 +10,17 @@ const PasswordInput = ({
 }: PasswordInputProps) => {
   return (
     <div>
-      <label htmlFor={id}>{children}</label>
-      <input required={required} id={id} name={name} type="password"></input>
+      <label className={styles.label} htmlFor={id}>
+        {children}
+        {required && <span className={styles.labelRequired}> (Required)</span>}
+      </label>
+      <input
+        className={styles.input}
+        required={required}
+        id={id}
+        name={name}
+        type="password"
+      ></input>
     </div>
   );
 };
