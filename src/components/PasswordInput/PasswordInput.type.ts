@@ -3,4 +3,5 @@ export interface PasswordInputProps {
   id: string;
   name: string;
   required?: boolean;
+  showToggle?: boolean;
 }

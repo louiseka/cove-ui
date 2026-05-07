@@ -1,5 +1,6 @@
-import type { PasswordInputProps } from "./PasswordInput.type";
+import { useState } from "react";
 
+import type { PasswordInputProps } from "./PasswordInput.type";
 import styles from "./PasswordInput.module.css";
 
 const PasswordInput = ({
@@ -7,7 +8,10 @@ const PasswordInput = ({
   id,
   name,
   required,
+  showToggle,
 }: PasswordInputProps) => {
+  const [visible, setVisible] = useState(false);
+
   return (
     <div>
       <label className={styles.label} htmlFor={id}>
@@ -19,8 +23,17 @@ const PasswordInput = ({
         required={required}
         id={id}
         name={name}
-        type="password"
+        type={visible ? "text" : "password"}
       ></input>
+      {showToggle && (
+        <button
+          className={styles.passwordToggle}
+          type="button"
+          onClick={() => setVisible(!visible)}
+        >
+          {visible ? "Hide password" : "Show password"}
+        </button>
+      )}
     </div>
   );
 };
