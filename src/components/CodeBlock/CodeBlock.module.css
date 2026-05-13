@@ -3,6 +3,11 @@
   margin: var(--space-4) 0;
 }
 
+.codeWrapper pre {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
 .copyBtn {
   position: absolute;
   top: 8px;
