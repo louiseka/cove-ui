@@ -1,6 +1,8 @@
 import type { CardProps } from "./Card.type";
 import styles from "./Card.module.css";
 
+import { FaArrowRight } from "react-icons/fa6";
+
 const Card = ({
   img,
   imgAlt,
@@ -24,7 +26,11 @@ const Card = ({
           {buttonText && (
             <button className={styles.cardButton}>{buttonText}</button>
           )}
-          {link && <a href={link}>{linkText}</a>}
+          {link && (
+            <a className={styles.cardLink} href={link}>
+              {linkText} <FaArrowRight />
+            </a>
+          )}
         </div>
       </article>
     </>
