@@ -1,7 +1,18 @@
 import Card from "../Card/Card";
+import CodeBlock from "../CodeBlock/CodeBlock";
 import oceanImage from "../../assets/images/ocean.webp";
 
 # Card
+
+<div className="docsHero">
+  A reusable card component for displaying content such as images, titles, and
+  descriptions, with optional call-to-action support for links or buttons.
+</div>
+---
+
+## Live Examples
+
+<div className="docsExamples">
 
 <Card
   img={oceanImage}
@@ -10,3 +21,43 @@ import oceanImage from "../../assets/images/ocean.webp";
   description="This is the ocean and this is a long long long description about how blue it is."
   buttonText="Book Now"
 />
+
+</div>
+
+---
+
+## Code Example
+
+<div className="docsUsage">
+
+<CodeBlock language="tsx">
+  {`import oceanImage from "../../assets/images/ocean.webp";
+  
+  <Card
+    img={oceanImage}
+    imgAlt="Close up of the blue ocean"
+    title="Blue Ocean"
+    description="This is the ocean and this is a long long long description about how blue it is."
+    buttonText="Book Now"
+/>`}
+</CodeBlock>
+
+</div>
+
+---
+
+## Props
+
+<div className="docsTable docsProps">
+
+| Prop        | Type   | Default | Description                      |
+| ----------- | ------ | ------- | -------------------------------- |
+| img         | string | —       | The source URL of the card image |
+| imgAlt      | string | —       | Alternative text for the image   |
+| title       | string | —       | Title displayed in the card      |
+| description | string | —       | Main descriptive text content    |
+| buttonText  | string | —       | Text displayed inside the button |
+| link        | string | —       | URL for the card link            |
+| linkText    | string | —       | Text displayed for the link      |
+
+</div>
