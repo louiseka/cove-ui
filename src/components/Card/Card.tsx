@@ -8,6 +8,7 @@ const Card = ({
   description,
   buttonText,
   link,
+  linkText,
 }: CardProps) => {
   return (
     <>
@@ -23,7 +24,7 @@ const Card = ({
           {buttonText && (
             <button className={styles.cardButton}>{buttonText}</button>
           )}
-          {link && <a>{link}</a>}
+          {link && <a href={link}>{linkText}</a>}
         </div>
       </article>
     </>

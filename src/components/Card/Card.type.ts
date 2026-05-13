@@ -5,4 +5,5 @@ export interface CardProps {
   description: string;
   buttonText?: string;
   link?: string;
+  linkText?: string;
 }
