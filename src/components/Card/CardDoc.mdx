@@ -19,13 +19,29 @@ import oceanImage from "../../assets/images/ocean.webp";
   imgAlt="Close up of the blue ocean"
   title="Blue Ocean"
   description="This is the ocean and this is a long long long description about how blue it is."
-  buttonText="Book Now"
+  buttonText="Book Ocean Tour"
+/>
+
+<Card
+  img={oceanImage}
+  imgAlt="Close up of the blue ocean"
+  title="Blue Ocean"
+  description="This is the ocean and this is a long long long description about how blue it is."
+  link="#"
+  linkText="Learn more about oceans"
 />
 
 <Card
   title="Blue Ocean"
   description="This is the ocean and this is a long long long description about how blue it is."
-  buttonText="Book Now"
+  buttonText="Book Ocean Tour"
+/>
+
+<Card
+  title="Blue Ocean"
+  description="This is the ocean and this is a long long long description about how blue it is."
+  link="#"
+  linkText="Learn more about oceans"
 />
 
 </div>
@@ -44,11 +60,97 @@ import oceanImage from "../../assets/images/ocean.webp";
   imgAlt="Close up of the blue ocean"
   title="Blue Ocean"
   description="This is the ocean and this is a long long long description about how blue it is."
-  buttonText="Book Now"
+  buttonText="Book ocean tour"
 />`}
 </CodeBlock>
 
 </div>
+
+---
+
+## When to use
+
+Use the Card component to present related content in a visually grouped and structured format. Cards are useful for combining images, text, and actions into a single reusable layout.
+
+Cards should provide concise information and clear actions without overwhelming the user.
+
+### Cards with Buttons
+
+Use cards with buttons when the card performs a direct action. For example:
+
+- Submitting an action
+- Opening a modal or dialog
+- Adding an item to a collection
+- Triggering a workflow or interaction
+
+Button text should clearly describe the action being performed.
+
+### Cards with Links
+
+Use cards with links when the card navigates users to additional content or another page. For example:
+
+- Opening an article or documentation page
+- Navigating to a product or detail page
+- Viewing additional information
+- Linking to external resources
+
+Link text should clearly describe the destination or purpose of the navigation.
+
+---
+
+## Accessibility
+
+Cards should present content in a clear and structured way so users can easily understand and interact with the information they contain.
+
+<div className="docsAccessibility">
+
+### Semantic structure
+
+- Use semantic elements such as `<article>` for standalone card content.
+- Ensure headings follow a logical hierarchy within the page.
+- Group related content together to improve readability and navigation.
+
+### Image accessibility
+
+Images must include meaningful alternative text using the imgAlt prop:
+
+- Describe the image content and purpose clearly
+- Avoid redundant phrases such as “image of” or “picture of”
+- Use empty alt text `("")` only for purely decorative images
+
+### Buttons and Links
+
+Buttons and links inside cards should clearly describe their action or destination. Avoid vague text such as:
+
+- “Click here”
+- “Read more”
+- “Learn more”
+
+Instead use descriptive actions such as:
+
+- “Book ocean tour”
+- “View destination”
+- “Read travel guide”
+- Content clarity
+
+### Titles and Descriptions
+
+Card titles and descriptions should provide enough context for users to understand the content without relying solely on images:
+
+- Keep titles concise and informative
+- Ensure descriptions are readable and meaningful
+- Avoid overly long blocks of text inside cards
+- Interactive elements
+
+### Using buttons and links
+
+When cards contain buttons or links:
+
+- Ensure interactive elements are keyboard accessible
+- Maintain visible focus styles for navigation
+- Do not nest interactive elements inside one another (e.g. buttons inside links)
+
+ </div>
 
 ---
 
