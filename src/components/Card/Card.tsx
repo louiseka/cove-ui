@@ -26,7 +26,7 @@ const Card = ({
           {buttonText && (
             <button className={styles.cardButton}>{buttonText}</button>
           )}
-          {link && (
+          {link && linkText && (
             <a className={styles.cardLink} href={link}>
               {linkText} <FaArrowRight />
             </a>
