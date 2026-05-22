@@ -1,7 +1,7 @@
 import Input from "./Input";
 import CodeBlock from "../CodeBlock/CodeBlock";
 
-# Input
+## Input
 
 <div className="docsHero">
   A reusable form input component with accessible labeling and support for
@@ -9,7 +9,7 @@ import CodeBlock from "../CodeBlock/CodeBlock";
 </div>
 ---
 
-## Live Examples
+### Live Examples
 
 <div className="docsExamples">
 
@@ -43,7 +43,7 @@ import CodeBlock from "../CodeBlock/CodeBlock";
 
 ---
 
-## Code Example
+### Code Example
 
 <div className="docsUsage">
 
@@ -57,11 +57,11 @@ import CodeBlock from "../CodeBlock/CodeBlock";
 
 ---
 
-## When to use
+### When to use
 
 Use the Input component inside forms to collect structured user data. Inputs should always be paired with a clear label and typically submitted via a form button.
 
-### Text Input
+#### Text Input
 
 Use a text input when you need free-form text from the user. For example:
 
@@ -69,7 +69,7 @@ Use a text input when you need free-form text from the user. For example:
 - Providing a username
 - Adding short single-line responses
 
-### Number Input
+#### Number Input
 
 Use a number input when the value must be numeric. For example:
 
@@ -79,7 +79,7 @@ Use a number input when the value must be numeric. For example:
 
 Avoid using number inputs for values that may include formatting (e.g. phone numbers with spaces or + signs).
 
-### Required Input
+#### Required Input
 
 Use a required input when a field must be completed before form submission. For example:
 
@@ -87,7 +87,7 @@ Use a required input when a field must be completed before form submission. For 
 - Mandatory checkout information
 - Required profile fields
 
-### Email Input
+#### Email Input
 
 Use an email input when collecting email addresses. For example:
 
@@ -95,7 +95,7 @@ Use an email input when collecting email addresses. For example:
 - Newsletter sign-ups
 - Contact forms
 
-### Telephone Input
+#### Telephone Input
 
 Use a telephone input when collecting phone numbers. For example:
 
@@ -105,20 +105,20 @@ Use a telephone input when collecting phone numbers. For example:
 
 ---
 
-## Accessibility
+### Accessibility
 
 Input fields must always be clearly labelled and associated with a form control. They should provide enough context for users to understand what data is expected and how to complete the field.
 
 <div className="docsAccessibility">
 
-### Semantic usage
+#### Semantic usage
 
 - Always use a `<label>` associated with an input via htmlFor and id.
 - Do not rely on placeholder text as a replacement for labels.
 - Group inputs within a `<form>` element when collecting user data.
 - Use appropriate input types (email, tel, number) to improve usability and mobile experience.
 
-### Label clarity
+#### Label clarity
 
 Labels should clearly describe the expected input. For example:
 
@@ -126,7 +126,7 @@ Labels should clearly describe the expected input. For example:
 - Mobile number
 - First name
 
-### Error handling
+#### Error handling
 
 When validation fails:
 
@@ -136,7 +136,7 @@ When validation fails:
 
 </div>
 
-## Props
+### Props
 
 <div className="docsTable docsProps">
 
