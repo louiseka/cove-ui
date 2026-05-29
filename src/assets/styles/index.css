@@ -49,6 +49,7 @@ a {
 button {
   font-family: "Nunito", sans-serif;
   cursor: pointer;
+  color: var(--text-black);
 }
 
 input {
