@@ -15,3 +15,13 @@
 .secondary {
   background-color: var(--primary-100);
 }
+
+.disabled {
+  background-color: var(--primary-50);
+  color: var(--neutral-400);
+}
+
+.loading,
+.disabled {
+  cursor: not-allowed;
+}

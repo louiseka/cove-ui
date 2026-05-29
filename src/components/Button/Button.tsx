@@ -10,7 +10,7 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`${styles.button} ${styles[variant]}`}
+      className={`${styles.button} ${styles[variant]} ${disabled ? styles.disabled : ""} ${loading ? styles.loading : ""}`}
       disabled={disabled || loading}
       type={type}
     >
