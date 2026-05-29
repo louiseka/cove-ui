@@ -11,6 +11,7 @@ const SiteNav = () => {
     { name: "Input", path: "input" },
     { name: "Password Input", path: "password" },
     { name: "Card", path: "card" },
+    { name: "Accordion", path: "accordion" },
   ];
 
   return (
