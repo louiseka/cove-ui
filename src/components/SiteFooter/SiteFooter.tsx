@@ -11,7 +11,7 @@ const SiteFooter = () => {
   return (
     <footer className={styles.footer}>
       <div>
-        <p>Built by Louise Aldridge </p>
+        <p className={styles.footerText}>Built by Louise Aldridge </p>
       </div>
       <div>
         <button

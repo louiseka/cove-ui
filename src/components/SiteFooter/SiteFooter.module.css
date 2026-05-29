@@ -8,12 +8,16 @@
   align-items: center;
 }
 
+.footerText {
+  font-size: var(--font-xs);
+}
+
 .footerButton {
   padding: var(--space-2) var(--space-4);
   background-color: var(--neutral-100);
   display: inline-flex;
   border-radius: var(--radius-sm);
-  font-size: var(--font-sm);
+  font-size: var(--font-xs);
   border: none;
 }
 
