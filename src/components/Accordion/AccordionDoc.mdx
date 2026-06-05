@@ -1,3 +1,141 @@
 import Accordion from "./Accordion";
+import CodeBlock from "../CodeBlock/CodeBlock";
 
 ## Accordion
+
+<div className="docsHero">
+  A reusable Accordion component for helping to reduce on-page clutter, easier
+  scanning, and space saving.
+</div>
+
+---
+
+### Live Examples
+
+<div className="docsExamples">
+
+<Accordion
+  heading={"Frequently Asked Questions"}
+  items={[
+  {
+    title: "How long does the tour last?",
+    content:
+      "Most tours last between two and four hours, depending on the route and weather conditions.",
+  },
+  {
+    title: "What should I bring?",
+    content:
+      "We recommend bringing sunscreen, a hat, sunglasses, water, and a light waterproof jacket.",
+  }
+  ]}
+/>
+</div>
+
+---
+
+### Code Example
+
+<div className="docsUsage">
+  <CodeBlock language="tsx">
+    {`<Accordion
+        heading={"Frequently Asked Questions"}
+        items={[
+        {
+            title: "How long does the tour last?",
+            content:
+            "Most tours last between two and four hours, depending on the route and weather conditions.",
+        },
+        {
+            title: "What should I bring?",
+            content:
+            "We recommend bringing sunscreen, a hat, sunglasses, water, and a light waterproof jacket.",
+        }
+    ]}
+/>`}
+  </CodeBlock>
+</div>
+
+---
+
+### When to use
+
+Use the Accordion component when you need to organise related content into collapsible sections. Accordions help reduce visual clutter and allow users to focus on the information most relevant to them.
+
+#### Frequently Asked Questions
+
+Accordions are commonly used for FAQ sections where users may only need answers to specific questions.
+For example:
+
+- Product FAQs
+- Service information
+- Booking information
+
+#### Content Organisation
+
+Use accordions when presenting secondary or supplementary information that does not need to be visible immediately.For example:
+
+- Technical specifications
+- Policies and procedures
+- Additional details
+
+#### Space-Constrained Layouts
+
+Use accordions when screen space is limited and displaying all content at once would make the page difficult to scan. Avoid using accordions when users need to compare multiple sections simultaneously, as hidden content can make comparison more difficult.
+
+---
+
+### Accessibility
+
+<div className="docsAccessibility">
+
+#### Semantic usage
+
+- The component uses native `<details>` and `<summary>` elements.
+- Native accordion behaviour provides built-in keyboard interaction.
+
+#### Keyboard interaction
+
+Users can:
+
+- Tab to an accordion summary
+- Press Enter to toggle a section
+- Press Space to toggle a section
+
+#### Clear headings
+
+Accordion titles should clearly describe the content contained within each section. For example:
+
+- What should I bring?
+- How long does the tour last?
+- Are food and drinks provided?
+
+#### Content organisation
+
+- Keep section titles concise and descriptive.
+- Group related information together.
+- Avoid placing critical information inside collapsed sections if all users must see it immediately.
+
+</div>
+
+---
+
+### Props
+
+<div className="docsTable docsProps">
+
+| Prop    | Type            | Default | Description                                          |
+| ------- | --------------- | ------- | ---------------------------------------------------- |
+| heading | string          | —       | Optional heading displayed above the accordion items |
+| items   | AccordionItem[] | —       | Array of accordion items to render                   |
+
+</div>
+
+<div className="docsTable docsProps">
+### AccordionItem
+
+| Prop    | Type   | Default | Description                                        |
+| ------- | ------ | ------- | -------------------------------------------------- |
+| title   | string | —       | The accordion section heading                      |
+| content | string | —       | The content displayed when the section is expanded |
+
+</div>
