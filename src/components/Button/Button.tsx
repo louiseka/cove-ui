@@ -7,10 +7,11 @@ const Button = ({
   disabled = false,
   variant = "primary",
   loading = false,
+  fullWidth = false,
 }: ButtonProps) => {
   return (
     <button
-      className={`${styles.button} ${styles[variant]} ${disabled ? styles.disabled : ""} ${loading ? styles.loading : ""}`}
+      className={`${styles.button} ${styles[variant]} ${fullWidth ? styles.fullWidth : ""} ${disabled ? styles.disabled : ""} ${loading ? styles.loading : ""}`}
       disabled={disabled || loading}
       type={type}
     >
