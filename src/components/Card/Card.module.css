@@ -27,18 +27,7 @@
 
 .cardText {
   font-size: var(--font-sm);
-}
-
-.cardButton {
-  font-family: var(--body-font);
-  font-size: var(--font-md);
-  padding: var(--space-2) var(--space-4);
-  margin: var(--space-3) 0 0 0;
-  border: none;
-  background-color: var(--primary-500);
-  border-radius: var(--radius-sm);
-  color: var(--primary-50);
-  width: 100%;
+  margin: 0 0 var(--space-3) 0;
 }
 
 .cardLink {

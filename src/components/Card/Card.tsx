@@ -1,4 +1,5 @@
 import type { CardProps } from "./Card.type";
+import Button from "../Button/Button";
 import styles from "./Card.module.css";
 
 import { FaArrowRight } from "react-icons/fa6";
@@ -24,7 +25,9 @@ const Card = ({
           <h3>{title}</h3>
           <p className={styles.cardText}>{description}</p>
           {buttonText && (
-            <button className={styles.cardButton}>{buttonText}</button>
+            <Button fullWidth type="button" variant="primary">
+              {buttonText}
+            </Button>
           )}
           {link && linkText && (
             <a className={styles.cardLink} href={link}>
@@ -38,5 +41,3 @@ const Card = ({
 };
 
 export default Card;
-
-// maybe add some label/info points
