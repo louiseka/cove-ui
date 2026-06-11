@@ -45,3 +45,13 @@
 .cardLink:active {
   text-decoration: underline;
 }
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontial {
+  display: flex;
+  flex-direction: row;
+}

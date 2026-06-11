@@ -6,4 +6,5 @@ export interface CardProps {
   buttonText?: string;
   link?: string;
   linkText?: string;
+  layout?: "horizontial" | "vertical";
 }

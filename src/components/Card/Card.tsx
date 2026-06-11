@@ -12,10 +12,11 @@ const Card = ({
   buttonText,
   link,
   linkText,
+  layout = "vertical",
 }: CardProps) => {
   return (
     <>
-      <article className={styles.card}>
+      <article className={`${styles.card} ${styles[layout]}`}>
         {img && (
           <div className={styles.cardImgContainer}>
             <img className={styles.cardImg} src={img} alt={imgAlt} />
