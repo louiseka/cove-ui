@@ -44,6 +44,30 @@ import oceanImage from "../../assets/images/ocean.webp";
   linkText="Learn more about oceans"
 />
 
+<Card
+  layout="horizontal"
+  img={oceanImage}
+  imgAlt="Close up of the blue ocean"
+  title="Blue Ocean"
+  description="This is the ocean and this is a long long long description about how blue it is."
+  buttonText="Book Ocean Tour"
+/>
+
+<Card
+  layout="horizontal"
+  title="Blue Ocean"
+  description="This is the ocean and this is a long long long description about how blue it is."
+  link="#"
+  linkText="Learn more about oceans"
+/>
+
+<Card
+  layout="horizontal"
+  title="Blue Ocean"
+  description="This is the ocean and this is a long long long description about how blue it is."
+  buttonText="Book Ocean Tour"
+/>
+
 </div>
 
 ---
@@ -95,6 +119,18 @@ Use cards with links when the card navigates users to additional content or anot
 - Linking to external resources
 
 Link text should clearly describe the destination or purpose of the navigation.
+
+#### Layout Variants
+
+Cards support two layout options to suit different UI contexts:
+
+Vertical (default)
+
+- Use the vertical layout for standard card stacks, such as grids or lists.
+
+Horizontal
+
+- Use the horizontal layout when space is wider than it is tall.
 
 ---
 
@@ -157,14 +193,15 @@ When cards contain buttons or links:
 
 <div className="docsTable docsProps">
 
-| Prop        | Type   | Default | Description                      |
-| ----------- | ------ | ------- | -------------------------------- |
-| img         | string | —       | The source URL of the card image |
-| imgAlt      | string | —       | Alternative text for the image   |
-| title       | string | —       | Title displayed in the card      |
-| description | string | —       | Main descriptive text content    |
-| buttonText  | string | —       | Text displayed inside the button |
-| link        | string | —       | URL for the card link            |
-| linkText    | string | —       | Text displayed for the link      |
+| Prop        | Type                       | Default    | Description                      |
+| ----------- | -------------------------- | ---------- | -------------------------------- |
+| img         | string                     | —          | The source URL of the card image |
+| imgAlt      | string                     | —          | Alternative text for the image   |
+| title       | string                     | —          | Title displayed in the card      |
+| description | string                     | —          | Main descriptive text content    |
+| buttonText  | string                     | —          | Text displayed inside the button |
+| link        | string                     | —          | URL for the card link            |
+| linkText    | string                     | —          | Text displayed for the link      |
+| layout      | "horizontal" \| "vertical" | "vertical" | The card's layout                |
 
 </div>
