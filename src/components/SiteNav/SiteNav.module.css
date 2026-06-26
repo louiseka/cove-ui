@@ -10,10 +10,18 @@
 }
 
 .nav {
-  width: 200px;
+  width: 250px;
   min-height: 100%;
-  padding: var(--space-4);
-  background-color: var(--neutral-100);
+  padding: var(--space-6);
+  background-color: var(--neutral-50);
+  border-right: 1px solid var(--neutral-200);
+}
+
+.navHeading {
+  font-weight: var(--font-bold);
+  padding: 1rem 0 0 0.8rem;
+  color: var(--neutral-400);
+  letter-spacing: 0.1rem;
 }
 
 .navList {
@@ -25,13 +33,19 @@
   margin: var(--space-4);
 }
 
+.navLink {
+  color: var(--neutral-600);
+}
+
 .navLink,
 .navLinkActive {
   text-decoration: none;
+  font-size: var(--font-lg);
 }
 
 .navLinkActive {
   border-left: 4px solid var(--primary-600);
+  color: var(--primary-700);
   font-weight: var(--font-bold);
   margin: -14px;
   padding: 0 0 0 0.6rem;

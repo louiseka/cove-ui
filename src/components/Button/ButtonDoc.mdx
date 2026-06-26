@@ -3,6 +3,7 @@ import CodeBlock from "../CodeBlock/CodeBlock";
 
 ## Button
 
+<div className="docs">
 <div className="docsHero">
   A reusable button component with different variants and states.
 </div>
@@ -25,8 +26,6 @@ import CodeBlock from "../CodeBlock/CodeBlock";
 <Button type="button" loading />
 
 </div>
-
----
 
 ### Code Example
 
@@ -52,6 +51,8 @@ Use a primary button for the main action on a page or section. For example:
 - Progressing to the next step.
 - Confirming the primary choice.
 
+---
+
 #### Secondary Button
 
 Use a secondary button for supporting or alternative actions. For example:
@@ -59,6 +60,8 @@ Use a secondary button for supporting or alternative actions. For example:
 - There is more than one action, but only one is primary.
 - Cancel, go back, or secondary workflows.
 - Less important actions alongside a primary button.
+
+---
 
 #### Disabled Button
 
@@ -68,6 +71,8 @@ Use a disabled button when an action is temporarily unavailable. For example:
 - User must complete a step first.
 - Action is not yet permitted.
 
+---
+
 #### Loading Button
 
 Use a loading button when an action is in progress after user interaction. For example:
@@ -75,6 +80,8 @@ Use a loading button when an action is in progress after user interaction. For e
 - Submitting a form.
 - Processing a request.
 - Saving data.
+
+---
 
 #### Submit Button
 
@@ -88,14 +95,16 @@ Use a submit button specifically for form submission. For example:
 
 ### Accessibility
 
-Buttons should be used for actions, not navigation. If the element takes a user to another page, use a link instead.
-
 <div className="docsAccessibility">
 
 #### Semantic usage
 
 - Use a `<button>` for actions such as submitting forms, opening dialogs, or triggering changes in the interface.
 - Use a link (`<a>`) for navigation between pages or external destinations.
+
+Buttons should be used for actions, not navigation. If the element takes a user to another page, use a link instead.
+
+---
 
 #### Button text
 
@@ -108,9 +117,9 @@ Button text should clearly describe the action it performs. For example:
 
 Avoid vague labels such as “Click here” or “Submit” without context.
 
-</div>
-
 ---
+
+</div>
 
 ### Props
 
@@ -124,4 +133,5 @@ Avoid vague labels such as “Click here” or “Submit” without context.
 | disabled  | boolean                  | false     | Disables the button                                          |
 | fullWidth | boolean                  | false     | Makes the button span the full width of its parent container |
 
+</div>
 </div>

@@ -23,6 +23,7 @@ const SiteNav = () => {
         Menu {open ? <FaAngleUp /> : <FaAngleDown />}
       </button>
       <nav className={`${styles.nav} ${open ? styles.open : ""}`}>
+        <p className={styles.navHeading}>COMPONENTS</p>
         <ul className={styles.navList}>
           {navItems.map((item) => (
             <li key={item.path} className={styles.navItem}>

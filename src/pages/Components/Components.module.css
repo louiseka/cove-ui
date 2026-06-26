@@ -4,6 +4,12 @@
   min-width: 0;
 }
 
+.componentsHeading {
+  font-weight: var(--font-bold);
+  color: var(--neutral-400);
+  letter-spacing: 0.1rem;
+}
+
 @media (min-width: 700px) {
   .components {
     margin: 2em;

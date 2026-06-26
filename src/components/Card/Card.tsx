@@ -23,7 +23,7 @@ const Card = ({
           </div>
         )}
         <div className={styles.cardDetails}>
-          <h3>{title}</h3>
+          <h3 className={styles.cardHeading}>{title}</h3>
           <p className={styles.cardText}>{description}</p>
           {buttonText && (
             <Button fullWidth type="button" variant="primary">

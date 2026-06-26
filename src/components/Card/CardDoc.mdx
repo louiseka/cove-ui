@@ -4,6 +4,7 @@ import oceanImage from "../../assets/images/ocean.webp";
 
 ## Card
 
+<div className="docs">
 <div className="docsHero">
   A reusable card component for displaying content such as images, titles, and
   descriptions, with optional call-to-action support for links or buttons.
@@ -55,8 +56,6 @@ import oceanImage from "../../assets/images/ocean.webp";
 
 </div>
 
----
-
 ### Code Example
 
 <div className="docsUsage">
@@ -94,6 +93,8 @@ Use cards with buttons when the card performs a direct action. For example:
 
 Button text should clearly describe the action being performed.
 
+---
+
 #### Cards with Links
 
 Use cards with links when the card navigates users to additional content or another page. For example:
@@ -105,16 +106,13 @@ Use cards with links when the card navigates users to additional content or anot
 
 Link text should clearly describe the destination or purpose of the navigation.
 
+---
+
 #### Layout Variants
 
 Cards support two layout options to suit different UI contexts:
 
-Vertical (default)
-
 - Use the vertical layout for standard card stacks, such as grids or lists.
-
-Horizontal
-
 - Use the horizontal layout when space is wider than it is tall.
 
 ---
@@ -131,6 +129,8 @@ Cards should present content in a clear and structured way so users can easily u
 - Ensure headings follow a logical hierarchy within the page.
 - Group related content together to improve readability and navigation.
 
+---
+
 #### Image accessibility
 
 Images must include meaningful alternative text using the imgAlt prop:
@@ -138,6 +138,8 @@ Images must include meaningful alternative text using the imgAlt prop:
 - Describe the image content and purpose clearly
 - Avoid redundant phrases such as “image of” or “picture of”
 - Use empty alt text `("")` only for purely decorative images
+
+---
 
 #### Buttons and Links
 
@@ -153,6 +155,8 @@ Instead use descriptive actions such as:
 - “View destination”
 - “Read travel guide”
 
+---
+
 #### Titles and Descriptions
 
 Card titles and descriptions should provide enough context for users to understand the content without relying solely on images:
@@ -162,6 +166,8 @@ Card titles and descriptions should provide enough context for users to understa
 - Avoid overly long blocks of text inside cards
 - Interactive elements
 
+---
+
 #### Using buttons and links
 
 When cards contain buttons or links:
@@ -169,6 +175,8 @@ When cards contain buttons or links:
 - Ensure interactive elements are keyboard accessible
 - Maintain visible focus styles for navigation
 - Do not nest interactive elements inside one another (e.g. buttons inside links)
+
+---
 
  </div>
 
@@ -189,4 +197,5 @@ When cards contain buttons or links:
 | linkText    | string                     | —          | Text displayed for the link      |
 | layout      | "horizontal" \| "vertical" | "vertical" | The card's layout                |
 
+</div>
 </div>
