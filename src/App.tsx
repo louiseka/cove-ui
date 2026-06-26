@@ -6,14 +6,16 @@ import SiteFooter from "./components/SiteFooter/SiteFooter";
 
 const App = () => {
   return (
-    <>
+    <div className="app">
       <SiteHeader />
-      <div className="wrapper">
+      <div className="app__body">
         <SiteNav />
-        <Outlet />
+        <main className="wrapper">
+          <Outlet />
+        </main>
       </div>
       <SiteFooter />
-    </>
+    </div>
   );
 };
 
