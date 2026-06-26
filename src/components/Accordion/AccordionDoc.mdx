@@ -3,6 +3,8 @@ import CodeBlock from "../CodeBlock/CodeBlock";
 
 ## Accordion
 
+<div className="docs">
+
 <div className="docsHero">
   A reusable Accordion component for helping to reduce on-page clutter, easier
   scanning, and space saving.
@@ -31,8 +33,6 @@ import CodeBlock from "../CodeBlock/CodeBlock";
 />
 
 </div>
-
----
 
 ### Code Example
 
@@ -71,6 +71,8 @@ For example:
 - Service information
 - Booking information
 
+---
+
 #### Content Organisation
 
 Use accordions when presenting secondary or supplementary information that does not need to be visible immediately.For example:
@@ -79,9 +81,17 @@ Use accordions when presenting secondary or supplementary information that does 
 - Policies and procedures
 - Additional details
 
+---
+
 #### Space-Constrained Layouts
 
-Use accordions when screen space is limited and displaying all content at once would make the page difficult to scan. Avoid using accordions when users need to compare multiple sections simultaneously, as hidden content can make comparison more difficult.
+Use accordions when:
+
+- Screen space is limited and displaying all content at once would make the page difficult to scan.
+
+Avoid using accordions when:
+
+- Users need to compare multiple sections simultaneously, as hidden content can make comparison more difficult.
 
 ---
 
@@ -94,6 +104,8 @@ Use accordions when screen space is limited and displaying all content at once w
 - The component uses native `<details>` and `<summary>` elements.
 - Native accordion behaviour provides built-in keyboard interaction.
 
+---
+
 #### Keyboard interaction
 
 Users can:
@@ -102,6 +114,8 @@ Users can:
 - Press Enter to toggle a section
 - Press Space to toggle a section
 
+---
+
 #### Clear headings
 
 Accordion titles should clearly describe the content contained within each section. For example:
@@ -109,6 +123,8 @@ Accordion titles should clearly describe the content contained within each secti
 - What should I bring?
 - How long does the tour last?
 - Are food and drinks provided?
+
+---
 
 #### Content organisation
 
@@ -139,4 +155,5 @@ Accordion titles should clearly describe the content contained within each secti
 | title   | string | —       | The accordion section heading                      |
 | content | string | —       | The content displayed when the section is expanded |
 
+</div>
 </div>

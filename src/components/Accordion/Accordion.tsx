@@ -10,7 +10,7 @@ const Accordion = ({ heading, items }: AccordionProps) => {
       {items.map((item, index) => (
         <details key={index} className={styles.accordionDetails}>
           <summary className={styles.accordionSummary}>
-            <h3> {item.title}</h3>
+            <h3 className={styles.accordionHeading}> {item.title}</h3>
             <span className={styles.accordionIcon}>
               <FaAngleDown />
             </span>

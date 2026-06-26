@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.accordionHeading {
+  margin: var(--space-4) 0 !important;
+}
+
 .accordionDetails {
   padding: var(--space-2) var(--space-5);
   margin: var(--space-4) 0;

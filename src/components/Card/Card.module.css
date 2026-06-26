@@ -8,6 +8,10 @@
     0 4px 12px rgba(15, 20, 23, 0.05);
 }
 
+.cardHeading {
+  margin: var(--space-2) 0 !important;
+}
+
 .cardImgContainer {
   width: 280px;
   height: 180px;

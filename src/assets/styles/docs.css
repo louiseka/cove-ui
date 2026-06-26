@@ -43,3 +43,15 @@
 .docs ul {
   line-height: 1.7;
 }
+
+.docs h2 {
+  margin: var(--space-2) 0 0;
+}
+
+.docs h3 {
+  margin: var(--space-5) 0 0;
+}
+
+.docs h4 {
+  margin: var(--space-4) 0 var(--space-2);
+}
