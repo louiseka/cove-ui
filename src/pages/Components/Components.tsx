@@ -22,6 +22,7 @@ const Components = () => {
 
   return (
     <section className={styles.components}>
+      <p className={styles.componentsHeading}>COMPONENTS</p>
       {content || <p>Component not found</p>}
     </section>
   );
