@@ -1,7 +1,7 @@
 .menuButton {
   padding: var(--space-2) var(--space-4);
   background-color: var(--neutral-200);
-  margin: 0 var(--space-6) var(--space-4);
+  margin: var(--space-4) var(--space-5) var(--space-2);
   border-radius: var(--radius-sm);
   font-size: var(--font-sm);
   border: none;
