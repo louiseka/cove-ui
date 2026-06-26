@@ -15,7 +15,7 @@ const SiteNav = () => {
   ];
 
   return (
-    <div className={styles.navContainer}>
+    <div>
       <button
         className={styles.menuButton}
         onClick={() => setOpen((prev) => !prev)}
