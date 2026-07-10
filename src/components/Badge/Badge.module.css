@@ -1,6 +1,55 @@
 .badge {
-  padding: var(--space-1);
+  padding: var(--space-1) var(--space-2);
   background-color: pink;
-  border-radius: var(--radius-sm);
-  color: red;
+  border-radius: 999px;
+  color: var(--neutral-50);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  min-width: 60px;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.success {
+  background-color: var(--success-green-50);
+  color: var(--success-green-800);
+  border-color: var(--success-green);
+}
+
+.warning {
+  background-color: var(--warning-amber-50);
+  color: var(--warning-amber-800);
+  border-color: var(--warning-amber);
+}
+
+.danger {
+  background-color: var(--error-red-50);
+  color: var(--error-red-800);
+  border-color: var(--error-red);
+}
+
+.new {
+  background-color: var(--accent-magenta-50);
+  border-color: var(--accent-magenta);
+  color: var(--accent-magenta-800);
+}
+
+.featured {
+  background-color: var(--accent-violet-50);
+  color: var(--accent-violet-800);
+  border-color: var(--accent-viole);
+}
+
+.popular {
+  background-color: var(--accent-gold-50);
+  color: var(--accent-gold-800);
+  border-color: var(--accent-gold);
+}
+
+.sale {
+  background-color: var(--accent-coral-50);
+  color: var(--accent-coral-800);
+  border-color: var(--accent-coral);
 }
