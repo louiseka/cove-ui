@@ -1,14 +1,147 @@
 import Badge from "../Badge/Badge";
+import CodeBlock from "../CodeBlock/CodeBlock";
 
 ## Badge
 
-Badge page
+<div className="docs">
 
-<Badge variant="sale"> Sale</Badge>
-<Badge variant="new"> New</Badge>
-<Badge variant="popular"> Popular</Badge>
-<Badge variant="featured"> Featured</Badge>
+<div className="docsHero">
+  A small, read-only label for showing status or category at a glance.
+</div>
+---
 
-<Badge variant="success"> Order Complete</Badge>
-<Badge variant="warning"> Order Processing</Badge>
-<Badge variant="danger"> Order Failed</Badge>
+### Live Examples
+
+<div className="docsExamples">
+
+<div className="badgesExamples">
+
+#### Category Badges
+
+<div className="badgesExamplesRow">
+  <Badge variant="sale"> Sale</Badge>
+  <Badge variant="new"> New</Badge>
+  <Badge variant="popular"> Popular</Badge>
+  <Badge variant="featured"> Featured</Badge>
+</div>
+
+#### Status Badges
+
+<div className="badgesExamplesRow">
+  <Badge variant="success"> Order Complete</Badge>
+  <Badge variant="warning"> Order Processing</Badge>
+  <Badge variant="danger"> Order Failed</Badge>
+</div>
+
+</div>
+</div>
+
+### Code Example
+
+<div className="docsUsage">
+
+<CodeBlock language="tsx">
+  {`<Badge variant="success"> Order Complete</Badge>`}
+</CodeBlock>
+
+</div>
+
+---
+
+### When to use
+
+#### Complete Badge (Status)
+
+Use a Complete badge to show that a task, order, or process has finished successfully. For example:
+
+- An order has been delivered.
+- A task or step has been marked done.
+- A payment has been confirmed.
+
+#### Processing Badge (Status)
+
+Use a Processing badge to show that an action is currently in progress. For example:
+
+- An order is being prepared or shipped.
+- A request is awaiting confirmation.
+- A background task hasn't finished yet.
+
+#### Failed Badge (Status)
+
+Use a Failed badge to show that an action did not complete successfully. For example:
+
+- A payment was declined.
+- An upload or submission was not successful.
+- A step in a process could not be completed.
+
+#### New Badge (Category)
+
+Use a New badge to highlight recently added items. For example:
+
+- A product was added to the catalogue this week.
+- A feature was just released.
+- Content that has recently been added to the site.
+
+#### Featured Badge (Category)
+
+Use a Featured badge to highlight editorially chosen or promoted items. For example:
+
+- An item selected by the team, not by an algorithm.
+- Content placed prominently in a list or grid.
+- A listing given extra visibility (promoted item).
+
+#### Popular Badge (Category)
+
+Use a Popular badge to highlight items with high demand or engagement. For example:
+
+- A bestselling product.
+- A frequently booked listing.
+
+#### Sale Badge (Category)
+
+Use a Sale badge to highlight a temporary price reduction. For example:
+
+- An item with a limited-time discount.
+- A clearance or end-of-season price.
+
+---
+
+### Accessibility
+
+<div className="docsAccessibility">
+
+Badges should be used to convey status or category, not to trigger actions. If the element responds to a click, use a button or tag instead.
+
+#### Semantic usage
+
+- Badges are read-only labels, not interactive elements, so they use a `<span>`, not a `<button>` or `<a>`.
+- Icon-only badges aren't supported, as the label communicates the meaning an icon alone can't guarantee.
+
+#### Badge Text
+
+Badge text should be short and specific enough to be understood without extra context. For example:
+
+- "Processing"
+- "Sale"
+- "Order Failed"
+
+Avoid ambiguous single words that could mean different things out of context, such as "Info" or "Status" with no label of what it refers to.
+
+---
+
+</div>
+
+### Props
+
+<div className="docsTable docsProps">
+
+| Prop     | Type                                                                             | Default | Description                        |
+| -------- | -------------------------------------------------------------------------------- | ------- | ---------------------------------- |
+| children | React.ReactNode                                                                  | —       | Badge text                         |
+| variant  | "success" \| "warning" \| "danger" \| "new" \| "sale" \| "featured" \| "popular" | —       | Badge's category or status styling |
+| icon     | React.ReactNode                                                                  | —       | Badge icon                         |
+| live     | "polite" \| "assertive"                                                          | —       | Aria live announcement             |
+
+</div>
+
+ </div>

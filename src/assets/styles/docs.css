@@ -55,3 +55,14 @@
 .docs h4 {
   margin: var(--space-4) 0 var(--space-2);
 }
+
+.badgesExample {
+  flex-direction: column;
+  align-items: left;
+}
+
+.badgesExamplesRow {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
