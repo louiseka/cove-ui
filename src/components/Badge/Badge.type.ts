@@ -1,5 +1,5 @@
 export interface BadgeProps {
-  icon?: React.ReactNode;
+  withIcon?: boolean;
   children: React.ReactNode;
   variant:
     | "success"

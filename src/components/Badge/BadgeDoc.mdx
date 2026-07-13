@@ -33,6 +33,39 @@ import CodeBlock from "../CodeBlock/CodeBlock";
   <Badge variant="danger"> Order Failed</Badge>
 </div>
 
+#### Category Badges with Icons
+
+<div className="badgesExamplesRow">
+  <Badge variant="sale" withIcon>
+    {" "}
+    Sale
+  </Badge>
+  <Badge variant="new" withIcon>
+    {" "}
+    New
+  </Badge>
+  <Badge variant="popular" withIcon>
+    Popular
+  </Badge>
+  <Badge variant="featured" withIcon>
+    Featured
+  </Badge>
+</div>
+
+#### Status Badges with Icons
+
+<div className="badgesExamplesRow">
+  <Badge variant="success" withIcon>
+    Order Complete
+  </Badge>
+  <Badge variant="warning" withIcon>
+    Order Processing
+  </Badge>
+  <Badge variant="danger" withIcon>
+    Order Failed
+  </Badge>
+</div>
+
 </div>
 </div>
 
@@ -139,7 +172,7 @@ Avoid ambiguous single words that could mean different things out of context, su
 | -------- | -------------------------------------------------------------------------------- | ------- | ---------------------------------- |
 | children | React.ReactNode                                                                  | —       | Badge text                         |
 | variant  | "success" \| "warning" \| "danger" \| "new" \| "sale" \| "featured" \| "popular" | —       | Badge's category or status styling |
-| icon     | React.ReactNode                                                                  | —       | Badge icon                         |
+| withIcon | boolean                                                                          | —       | Badge icon                         |
 | live     | "polite" \| "assertive"                                                          | —       | Aria live announcement             |
 
 </div>
