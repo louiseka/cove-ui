@@ -20,9 +20,38 @@
   --neutral-900: #0f1417;
 
   /* States */
+  /* Success */
+  --success-green-50: #e7f3ec;
   --success-green: #2e8b57;
+  --success-green-800: #1f6b41;
+
+  /* Warning */
+  --warning-amber-50: #fcf1e0;
   --warning-amber: #e9a23b;
+  --warning-amber-800: #935f13;
+
+  /* Error */
+  --error-red-50: #fbe9e9;
   --error-red: #d64545;
+  --error-red-800: #8f2e2e;
+
+  /* Accents */
+
+  --accent-coral: #e86a4d;
+  --accent-coral-50: #fbe9e4;
+  --accent-coral-800: #8a3018;
+
+  --accent-violet: #7c5cd9;
+  --accent-violet-50: #efe8fb;
+  --accent-violet-800: #4a2f96;
+
+  --accent-gold: #e0b429;
+  --accent-gold-50: #fbf1d9;
+  --accent-gold-800: #7a5c0e;
+
+  --accent-magenta: #e2568f;
+  --accent-magenta-50: #fbe4ee;
+  --accent-magenta-800: #96235c;
 
   /* Backgrounds */
   --bg-white: #f8fafb;
