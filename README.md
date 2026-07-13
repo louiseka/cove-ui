@@ -24,6 +24,9 @@ Cove UI currently includes:
 - Card
 - Input
 - Password Input
+- Card
+- Accordion
+- Badge
 
 Each component includes:
 
