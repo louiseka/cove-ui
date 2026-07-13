@@ -4,6 +4,7 @@ import PasswordInputDoc from "../../components/PasswordInput/PasswordInputDoc.md
 import CardDoc from "../../components/Card/CardDoc.mdx";
 import AccordionDoc from "../../components/Accordion/AccordionDoc.mdx";
 import BadgeDoc from "../../components/Badge/BadgeDoc.mdx";
+import SelectDoc from "../../components/Select/SelectDoc.mdx";
 
 import styles from "./Components.module.css";
 import { useParams } from "react-router";
@@ -15,6 +16,7 @@ const componentMap = {
   card: <CardDoc />,
   accordion: <AccordionDoc />,
   badge: <BadgeDoc />,
+  select: <SelectDoc />,
 };
 
 const Components = () => {
