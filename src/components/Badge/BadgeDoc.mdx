@@ -29,19 +29,21 @@ import CodeBlock from "../CodeBlock/CodeBlock";
 
 <div className="badgesExamplesRow">
   <Badge variant="success"> Order Complete</Badge>
-  <Badge variant="warning"> Order Processing</Badge>
-  <Badge variant="danger"> Order Failed</Badge>
+  <Badge variant="warning" live="polite">
+    Order Processing
+  </Badge>
+  <Badge variant="danger" live="assertive">
+    Order Failed
+  </Badge>
 </div>
 
 #### Category Badges with Icons
 
 <div className="badgesExamplesRow">
   <Badge variant="sale" withIcon>
-    {" "}
     Sale
   </Badge>
   <Badge variant="new" withIcon>
-    {" "}
     New
   </Badge>
   <Badge variant="popular" withIcon>
@@ -58,10 +60,10 @@ import CodeBlock from "../CodeBlock/CodeBlock";
   <Badge variant="success" withIcon>
     Order Complete
   </Badge>
-  <Badge variant="warning" withIcon>
+  <Badge variant="warning" live="polite" withIcon>
     Order Processing
   </Badge>
-  <Badge variant="danger" withIcon>
+  <Badge variant="danger" live="assertive" withIcon>
     Order Failed
   </Badge>
 </div>
@@ -159,6 +161,13 @@ Badge text should be short and specific enough to be understood without extra co
 - "Order Failed"
 
 Avoid ambiguous single words that could mean different things out of context, such as "Info" or "Status" with no label of what it refers to.
+
+#### Live updates
+
+Use the `live` prop only when a badge's text can change without a page reload — for example, an order status updating from "Order Processing" to "Order Complete" in real time. Static badges that render once shouldn't set `live`, to avoid unnecessary announcements for screen reader users.
+
+- `live="polite"` waits for a pause before announcing the change - the right choice for most status updates.
+- `live="assertive"` interrupts immediately - reserve this for urgent changes the user needs to know about right away, such as a payment failing.
 
 ---
 
