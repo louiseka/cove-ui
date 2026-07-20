@@ -10,7 +10,6 @@ const Select = () => {
         <option value="spider">Spider</option>
         <option value="goldfish">Goldfish</option>
       </select>
-      ;
     </>
   );
 };
