@@ -1,0 +1,26 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.selectLabel {
+  font-size: var(--font-lg);
+  display: flex;
+}
+
+.selectInput {
+  margin: var(--space-1) 0 var(--space-2);
+  padding: var(--space-1);
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--neutral-400);
+  font-family: var(--body-font);
+  font-size: var(--font-md);
+  color: var(--text-black);
+  cursor: pointer;
+  background-color: var(--neutral-50);
+}
+
+.selectInput:focus {
+  outline: 2px solid var(--primary-600);
+}

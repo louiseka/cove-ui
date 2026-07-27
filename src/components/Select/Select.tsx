@@ -1,4 +1,5 @@
 import type { SelectProps } from "./Select.type";
+import styles from "./Select.module.css";
 
 const Select = ({
   label,
@@ -11,9 +12,12 @@ const Select = ({
   errorMessage,
 }: SelectProps) => {
   return (
-    <>
-      <label htmlFor={selectName}>{label}:</label>
+    <div className={styles.select}>
+      <label className={styles.selectLabel} htmlFor={selectName}>
+        {label}:
+      </label>
       <select
+        className={styles.selectInput}
         disabled={disabled}
         name={selectName}
         id={selectName}
@@ -29,7 +33,7 @@ const Select = ({
         })}
       </select>
       {error && <p>{errorMessage}</p>}
-    </>
+    </div>
   );
 };
 
