@@ -1,7 +1,124 @@
 import { SelectDemo, ErrorSelectDemo, DisabledSelectDemo } from "./SelectDemo";
+import CodeBlock from "../CodeBlock/CodeBlock";
 
 ## Select
+
+<div className="docs">
+<div className="docsHero">
+  A reusable select component with support for errors and disabled states.
+</div>
+---
+
+### Live Examples
+
+<div className="docsExamples">
 
 <SelectDemo />
 <ErrorSelectDemo />
 <DisabledSelectDemo />
+</div>
+
+### Code Example
+
+<div className="docsUsage">
+
+<CodeBlock language="tsx">
+  {` <Select
+      label="Choose a destination"
+      selectName="holiday-destination"
+      value={destination}
+      onChange={setDestination}
+      options={options}
+    />`}
+</CodeBlock>
+
+</div>
+
+---
+
+### When to use
+
+#### Select
+
+Use a select when choosing one option from a medium-to-long list, inside a real form. For example:
+
+- Choosing a country, currency, or category from many options.
+- Forms where the field needs to submit a value.
+
+#### Avoid a Select when
+
+- There are only 2-4 options - use radio buttons instead, so all choices are visible without an extra click.
+- Options need icons, descriptions, or other rich content - native `<select>` can only render plain text.
+- Users need to choose more than one option - use checkboxes.
+
+#### Error state
+
+Use the error state when a selection is required but missing, or invalid in context. For example:
+
+- A required field left unselected on form submission.
+- A previously valid selection that's no longer valid.
+
+#### Disabled state
+
+Use the disabled state when a selection can't currently be changed. For example:
+
+- A field locked after submission.
+- An option that depends on a prior step being completed first.
+- A value that's fixed and not editable in the current context.
+
+---
+
+### Accessibility
+
+<div className="docsAccessibility">
+
+Select uses the native `<select>` element, which comes with built-in keyboard navigation, screen reader support, and mobile picker behaviour.
+
+#### Semantic usage
+
+- Always pair a `<select>` with a `<label>`, never rely on placeholder text or surrounding text alone to describe the field.
+- Use a select for choosing a value, not for navigation or triggering an action.
+
+#### Label text
+
+- Write a clear, descriptive label that says exactly what's being chosen. For example, "Choose a holiday destination" rather than a vague "Destination" or generic "Select an option."
+- Keep option labels distinct from one another. Avoid near-identical options that are hard to tell apart by ear or at a glance, such as "Standard shipping" and "Standard delivery"
+- Avoid truncating option text. If a label is too long to fit, shorten the underlying content itself rather than cutting it off with an ellipsis, since a cut-off option can't be understood by sighted or screen reader users alike.
+
+#### Error messaging
+
+- Pair the error message with the field using `aria-describedby`, pointing to the error message's `id`, so screen reader users hear the error when they reach the field - not just sighted users seeing it visually.
+
+</div>
+
+---
+
+### Props
+
+<div className="docsTable docsProps">
+
+| Prop         | Type                    | Default | Description                                                  |
+| ------------ | ----------------------- | ------- | ------------------------------------------------------------ |
+| label        | string                  | —       | Descriptive label for select input                           |
+| selectName   | string                  | —       | Name and id attribute for the select, used to link the label |
+| value        | string                  | —       | Currently selected value                                     |
+| options      | OptionItem[]            | —       | An array of options to render                                |
+| onChange     | (value: string) => void | —       | Called with the new value when the user selects an option    |
+| disabled     | boolean                 | —       | Disables the select                                          |
+| error        | boolean                 | —       | Shows the field in an error state                            |
+| errorMessage | string                  | —       | Message displayed when error is true                         |
+
+</div>
+
+### OptionItem
+
+<div className="docsTable docsProps">
+
+| Prop  | Type   | Default | Description                                      |
+| ----- | ------ | ------- | ------------------------------------------------ |
+| value | string | —       | The value submitted when this option is selected |
+| label | string | —       | The text shown to the user for this option       |
+
+</div>
+
+</div>
