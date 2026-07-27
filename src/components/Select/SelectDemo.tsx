@@ -5,6 +5,10 @@ const options = [
   { value: "spain", label: "Spain" },
   { value: "italy", label: "Italy" },
   { value: "greece", label: "Greece" },
+  { value: "france", label: "France" },
+  { value: "germany", label: "Germany" },
+  { value: "belgium", label: "Belgium" },
+  { value: "finland", label: "Finland" },
 ];
 
 const optionsWithPlaceholder = [
