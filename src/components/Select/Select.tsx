@@ -16,8 +16,9 @@ const Select = ({
       <label className={styles.selectLabel} htmlFor={selectName}>
         {label}:
       </label>
+
       <select
-        className={styles.selectInput}
+        className={`${styles.selectInput} ${error ? styles.error : ""} `}
         disabled={disabled}
         name={selectName}
         id={selectName}
@@ -32,7 +33,7 @@ const Select = ({
           );
         })}
       </select>
-      {error && <p>{errorMessage}</p>}
+      {error && <p className={styles.errorMessage}>{errorMessage}</p>}
     </div>
   );
 };
