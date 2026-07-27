@@ -21,20 +21,3 @@
   outline: 2px solid var(--primary-600);
   background-color: var(--neutral-50);
 }
-
-.selectInput:disabled {
-  background-color: var(--neutral-100);
-  color: var(--neutral-400);
-  border-color: var(--neutral-200);
-  cursor: not-allowed;
-}
-
-.error {
-  border-color: var(--error-red);
-}
-
-.errorMessage {
-  font-size: var(--font-sm);
-  color: var(--error-red);
-  margin-top: var(--space-1);
-}
