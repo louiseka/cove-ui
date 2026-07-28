@@ -19,6 +19,8 @@ const Select = ({
 
       <select
         className={`${styles.selectInput} ${error ? styles.error : ""} `}
+        aria-describedby={error ? `select-${selectName}` : undefined}
+        aria-invalid={error}
         disabled={disabled}
         name={selectName}
         id={selectName}
@@ -33,7 +35,11 @@ const Select = ({
           );
         })}
       </select>
-      {error && <p className={styles.errorMessage}>{errorMessage}</p>}
+      {error && (
+        <p id={`select-${selectName}`} className={styles.errorMessage}>
+          {errorMessage}
+        </p>
+      )}
     </div>
   );
 };
