@@ -13,6 +13,7 @@ const SiteNav = () => {
     { name: "Card", path: "card" },
     { name: "Accordion", path: "accordion" },
     { name: "Badge", path: "badge" },
+    { name: "Select", path: "select" },
   ];
 
   return (
