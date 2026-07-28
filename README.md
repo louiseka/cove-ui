@@ -10,7 +10,7 @@
 
 Cove UI is a lightweight design system built with React and TypeScript. It focuses on reusable, type-safe UI components with consistent styling, accessibility considerations, and component-level documentation.
 
-The project is designed to demonstrate frontend engineering skills including component architecture, TypeScript usage, styling patterns, documentation workflows, and unit testing.
+The project is designed to demonstrate frontend engineering skills including component architecture, TypeScript usage, styling patterns, accessibility, documentation workflows, and unit testing.
 
 This project is currently a work in progress and will continue to expand with additional components and design system features.
 
@@ -27,6 +27,7 @@ Cove UI currently includes:
 - Card
 - Accordion
 - Badge
+- Select Input
 
 Each component includes:
 
