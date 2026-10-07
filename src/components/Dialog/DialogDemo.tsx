@@ -7,15 +7,18 @@ const DialogDemo = () => {
   return (
     <>
       <button type="button" onClick={() => setOpen(true)} aria-expanded={open}>
-        Open Modal
+        Cancel Booking
       </button>
       <Dialog
-        title="This is a dialog"
-        description="This is the dialog's description"
-        showCompleteButton
-        showCloseButton
+        title="Are you sure you want to cancel?"
+        description="You'll lose your place on this trip as once confirmed, it can't be undone."
+        confirmLabel="Cancel booking"
+        dismissLabel="Keep booking"
         isOpen={open}
         onClose={() => setOpen(false)}
+        onConfirm={() => {
+          setOpen(false);
+        }}
       />
     </>
   );

@@ -4,10 +4,11 @@ import { useEffect } from "react";
 const Dialog = ({
   isOpen,
   onClose,
+  onConfirm,
   title,
   description,
-  showCompleteButton,
-  showCloseButton,
+  confirmLabel,
+  dismissLabel,
 }: DialogProps) => {
   useEffect(() => {
     if (!isOpen) return;
@@ -27,12 +28,17 @@ const Dialog = ({
   return (
     <>
       <dialog open={isOpen}>
+        <button type="button" onClick={onClose}>
+          Close
+        </button>
         <h2>{title}</h2>
         <p>{description}</p>
-        {showCompleteButton && <button type="button">Create </button>}
-        {showCloseButton && (
-          <button type="button" onClick={onClose}>
-            Cancel
+        <button type="button" onClick={onClose}>
+          {dismissLabel}
+        </button>
+        {onConfirm && (
+          <button type="button" onClick={onConfirm}>
+            {confirmLabel}
           </button>
         )}
       </dialog>
