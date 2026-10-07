@@ -9,7 +9,14 @@ const DialogDemo = () => {
       <button type="button" onClick={() => setOpen(true)} aria-expanded={open}>
         Open Modal
       </button>
-      <Dialog onClose={() => setOpen(false)} />
+      <Dialog
+        title="This is a dialog"
+        description="This is the dialog's description"
+        showCompleteButton
+        showCloseButton
+        isOpen={open}
+        onClose={() => setOpen(false)}
+      />
     </>
   );
 };
