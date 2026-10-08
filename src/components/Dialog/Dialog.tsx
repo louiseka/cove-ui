@@ -1,5 +1,7 @@
 import type { DialogProps } from "./Dialog.type";
-import { useEffect } from "react";
+import styles from "./Dialog.module.css";
+import { useEffect, useRef } from "react";
+import { FaXmark } from "react-icons/fa6";
 
 const Dialog = ({
   isOpen,
@@ -10,37 +12,49 @@ const Dialog = ({
   confirmLabel,
   dismissLabel,
 }: DialogProps) => {
+  const ref = useRef<HTMLDialogElement>(null);
+
   useEffect(() => {
-    if (!isOpen) return;
+    const dialog = ref.current;
+    if (!dialog) return;
 
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-
-    // Runs on every key press and when the key is 'Escape', it calls onClose()
-
-    document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, onClose]);
-
-  //keydown listens for key presses on page and the return function is cleanup.
+    if (isOpen && !dialog.open) dialog.showModal();
+    if (!isOpen && dialog.open) dialog.close();
+  }, [isOpen]);
 
   return (
     <>
-      <dialog open={isOpen}>
-        <button type="button" onClick={onClose}>
-          Close
-        </button>
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <button type="button" onClick={onClose}>
-          {dismissLabel}
-        </button>
-        {onConfirm && (
-          <button type="button" onClick={onConfirm}>
-            {confirmLabel}
+      <dialog ref={ref} className={styles.dialog} onClose={onClose}>
+        <div className={styles.dialogHeader}>
+          <button
+            className={styles.dialogCloseBtn}
+            type="button"
+            onClick={onClose}
+            aria-label="Close dialog"
+          >
+            <FaXmark className={styles.closeIcon} />
           </button>
-        )}
+          <h4 className={styles.dialogHeading}>{title}</h4>
+        </div>
+        <p className={styles.dialogDescription}>{description}</p>
+        <div className={styles.dialogBtnContainer}>
+          <button
+            className={`${styles.dialogBtn} ${styles.dialogDismiss}`}
+            type="button"
+            onClick={onClose}
+          >
+            {dismissLabel}
+          </button>
+          {onConfirm && (
+            <button
+              className={`${styles.dialogBtn} ${styles.dialogConfirm}`}
+              type="button"
+              onClick={onConfirm}
+            >
+              {confirmLabel}
+            </button>
+          )}
+        </div>
       </dialog>
     </>
   );
