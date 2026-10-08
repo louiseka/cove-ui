@@ -1,5 +1,118 @@
 import DialogDemo from "./DialogDemo";
+import CodeBlock from "../CodeBlock/CodeBlock";
 
 ## Dialog
 
-<DialogDemo />
+<div className="docs">
+<div className="docsHero">
+  A reusable modal dialog component for when users need to make decisions.
+</div>
+---
+### Live Examples
+
+<div className="docsExamples">
+  <DialogDemo />
+</div>
+
+### Code Example
+
+<div className="docsUsage">
+
+<CodeBlock language="tsx">
+  {` 
+   <button
+        type="button"
+        onClick={() => setOpen(true)}
+        aria-expanded={open}
+      > 
+        Cancel Booking
+      </button>
+  
+  <Dialog
+        title="Cancel this booking?"
+        description="You'll lose your place on this trip as once confirmed, it can't be undone."
+        confirmLabel="Cancel booking"
+        dismissLabel="Keep booking"
+        isOpen={open}
+        onClose={() => setOpen(false)}
+        onConfirm={() => {
+          setOpen(false);
+        }}
+      />`}
+</CodeBlock>
+
+</div>
+
+---
+
+### When to use
+
+#### Dialog
+
+Use a dialog when the user needs to make a decision or give a short piece of input before continuing, without leaving the page they're on. For example:
+
+- Confirming an action that can't be undone, like cancelling a booking.
+- Acknowledging a change that blocks progress, like a price change or an unavailable room.
+- Short in-context forms, like adding a promo code or a traveller's details.
+
+#### Avoid a Dialog when
+
+- The content is long or has multiple steps - use a dedicated page instead, so the user isn't working inside a small window.
+- The message is passive and needs no response.
+- The content is promotional or the user didn't trigger it. Dialogs block the page, so reserve them for things the user needs to act on.
+
+#### Confirmation dialogs
+
+Pass `onConfirm` when the dialog asks the user to approve an action. Without it, only the dismiss button shows, which suits information-only dialogs. For example:
+
+- Cancelling a booking or removing a traveller.
+- Leaving checkout with items still in the basket.
+
+#### Dismissing
+
+Users can leave a dialog without taking action by pressing Escape, using the close button, or choosing the dismiss button. All three call `onClose`.
+
+---
+
+### Accessibility
+
+<div className="docsAccessibility">
+
+Dialog uses the native `<dialog>` element, which comes with built-in behaviour that would otherwise take a lot of code to get right:
+
+- Focus moves into the dialog when it opens and returns to the button that opened it when it closes.
+- Focus stays inside the dialog while it's open, and the rest of the page can't be clicked or tabbed to.
+- Pressing Escape closes the dialog.
+- Screen readers announce it as a dialog.
+
+#### Button text
+
+- Label buttons with the specific action, like "Cancel booking" and "Keep booking", rather than "Yes" and "No". This avoids confusion in dialogs about cancelling something, where a plain "Cancel" button could mean either thing.
+
+#### Timing
+
+- Don't close a dialog automatically after a set time. People who use screen readers, magnifiers, or switch devices, or who need longer to read and respond, may not finish before it disappears.
+- Timed dialogs also pressure people into decisions, which is a particular risk for payments and cancellations.
+- Leave the dialog open until the user dismisses or confirms it. If a session or price hold really does expire, say so in the dialog and let the user choose what to do next.
+
+ </div>
+
+---
+
+### Props
+
+<div className="docsTable docsProps">
+
+| Prop         | Type       | Default | Description                                                                                    |
+| ------------ | ---------- | ------- | ---------------------------------------------------------------------------------------------- |
+| isOpen       | boolean    | -       | Controls whether the dialog is open                                                            |
+| onClose      | () => void | -       | Called when the user dismisses the dialog (close button, dismiss button, or Escape)            |
+| onConfirm    | () => void | -       | Called when the confirm button is clicked. The confirm button only shows when this is provided |
+| title        | string     | -       | Heading of the dialog, also used as its accessible name                                        |
+| description  | string     | -       | Supporting text shown below the title                                                          |
+| confirmLabel | string     | -       | Text for the confirm button                                                                    |
+| dismissLabel | string     | -       | Text for the dismiss button                                                                    |
+
+</div>
+
+</div>
