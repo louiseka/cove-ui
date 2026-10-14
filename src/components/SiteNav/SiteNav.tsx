@@ -14,6 +14,7 @@ const SiteNav = () => {
     { name: "Accordion", path: "accordion" },
     { name: "Badge", path: "badge" },
     { name: "Select", path: "select" },
+    { name: "Dialog", path: "dialog" },
   ];
 
   return (

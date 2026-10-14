@@ -1,0 +1,69 @@
+.dialog {
+  border: none;
+
+  border-radius: var(--radius-md);
+  box-shadow:
+    0 1px 2px rgba(15, 20, 23, 0.04),
+    0 4px 12px rgba(15, 20, 23, 0.05);
+  padding: 2em 2em 0.5em;
+}
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / 0.45);
+}
+
+.dialogHeader {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dialogHeading {
+  margin: 0;
+}
+
+.dialogDescription {
+  margin: var(--space-2) 0;
+  width: 85%;
+  padding: 0 0 0.5em;
+}
+
+.dialogBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1em 0;
+  border-top: 1px solid var(--neutral-200);
+}
+
+.dialogBtn {
+  font-family: var(--body-font);
+  font-size: var(--font-md);
+  font-weight: var(--font-semibold);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+
+.dialogConfirm {
+  background-color: var(--error-red);
+  color: var(--error-red-50);
+  border: none;
+}
+
+.dialogDismiss {
+  border: 1px solid var(--neutral-400);
+  background-color: transparent;
+}
+
+.dialogCloseBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.closeIcon {
+  color: var(--neutral-600);
+  font-size: 1.2rem;
+}

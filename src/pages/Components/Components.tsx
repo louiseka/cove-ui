@@ -5,7 +5,7 @@ import CardDoc from "../../components/Card/CardDoc.mdx";
 import AccordionDoc from "../../components/Accordion/AccordionDoc.mdx";
 import BadgeDoc from "../../components/Badge/BadgeDoc.mdx";
 import SelectDoc from "../../components/Select/SelectDoc.mdx";
-
+import DialogDoc from "../../components/Dialog/DialogDoc.mdx";
 import styles from "./Components.module.css";
 import { useParams } from "react-router";
 
@@ -17,6 +17,7 @@ const componentMap = {
   accordion: <AccordionDoc />,
   badge: <BadgeDoc />,
   select: <SelectDoc />,
+  dialog: <DialogDoc />,
 };
 
 const Components = () => {
