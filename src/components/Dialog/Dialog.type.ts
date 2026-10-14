@@ -4,6 +4,6 @@ export interface DialogProps {
   onConfirm: () => void;
   title: string;
   description: string;
-  confirmLabel?: string;
-  dismissLabel?: string;
+  confirmLabel: string;
+  dismissLabel: string;
 }
