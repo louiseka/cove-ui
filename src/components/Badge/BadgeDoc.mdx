@@ -162,16 +162,9 @@ Badge text should be short and specific enough to be understood without extra co
 
 Avoid ambiguous single words that could mean different things out of context, such as "Info" or "Status" with no label of what it refers to.
 
-#### Live updates
-
-Use the `live` prop only when a badge's text can change without a page reload — for example, an order status updating from "Order Processing" to "Order Complete" in real time. Static badges that render once shouldn't set `live`, to avoid unnecessary announcements for screen reader users.
-
-- `live="polite"` waits for a pause before announcing the change - the right choice for most status updates.
-- `live="assertive"` interrupts immediately - reserve this for urgent changes the user needs to know about right away, such as a payment failing.
+</div>
 
 ---
-
-</div>
 
 ### Props
 
