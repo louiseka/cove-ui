@@ -6,6 +6,7 @@ import AccordionDoc from "../../components/Accordion/AccordionDoc.mdx";
 import BadgeDoc from "../../components/Badge/BadgeDoc.mdx";
 import SelectDoc from "../../components/Select/SelectDoc.mdx";
 import DialogDoc from "../../components/Dialog/DialogDoc.mdx";
+import TabsDoc from "../../components/Tabs/TabsDoc.mdx";
 import styles from "./Components.module.css";
 import { useParams } from "react-router";
 
@@ -18,6 +19,7 @@ const componentMap = {
   badge: <BadgeDoc />,
   select: <SelectDoc />,
   dialog: <DialogDoc />,
+  tabs: <TabsDoc />,
 };
 
 const Components = () => {
