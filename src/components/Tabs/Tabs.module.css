@@ -17,6 +17,10 @@
   padding: var(--space-2) var(--space-4);
 }
 
+.tabsTabSelected {
+  text-decoration: none;
+}
+
 .tabsPanel {
   border: 1px solid;
   border-top: 0;

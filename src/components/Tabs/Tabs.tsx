@@ -5,7 +5,7 @@ const Tabs = () => {
     <div className={styles.tabs}>
       <ul className={styles.tabsList}>
         <li className={styles.tabsListItemSelected}>
-          <a className={styles.tabsTab} href="#">
+          <a className={styles.tabsTabSelected} href="#">
             Tab 1
           </a>
         </li>
