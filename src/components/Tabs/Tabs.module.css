@@ -1,0 +1,24 @@
+.tabsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid;
+}
+
+.tabsListItem {
+  padding: var(--space-2) var(--space-4);
+}
+
+.tabsListItemSelected {
+  border: 1px solid;
+  border-bottom: 0;
+  padding: var(--space-2) var(--space-4);
+}
+
+.tabsPanel {
+  border: 1px solid;
+  border-top: 0;
+  padding: var(--space-2) var(--space-4);
+}

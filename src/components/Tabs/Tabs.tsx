@@ -3,8 +3,8 @@ import styles from "./Tabs.module.css";
 const Tabs = () => {
   return (
     <div className={styles.tabs}>
-      <ul>
-        <li className={styles.tabsListItem}>
+      <ul className={styles.tabsList}>
+        <li className={styles.tabsListItemSelected}>
           <a className={styles.tabsTab} href="#">
             Tab 1
           </a>
